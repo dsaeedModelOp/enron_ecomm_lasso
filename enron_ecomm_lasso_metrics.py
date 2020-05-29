@@ -7,7 +7,7 @@ import scipy
 import sklearn
 import sys
 
-# Test
+# New from git
 
 def remove_proper_nouns(string):
     list_of_words = string.split()
