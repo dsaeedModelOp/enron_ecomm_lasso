@@ -76,7 +76,7 @@ def action(x):
     output = pd.concat([x, predictions], axis=1)
     output.columns = ['id', 'content', 'prediction']
     output = output.to_dict(orient='records')
-    yield output
+    yield output[0]
     
 def get_shap():
     return {
